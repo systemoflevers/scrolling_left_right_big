@@ -464,10 +464,6 @@ vCurrentBankLow:
 vNextSCX:
   ;; Used to keep track of scrolling to sync with VBlank
   ds 1
-vCopyDestination:
-  ;; Where to copy to. Just the lower byte because the upper byte is always the
-  ;; some, either HIGH(_SCRN0) or HIGH(_SCRN1)
-  ds 1
 vCopySource:
   ;; Where to get the next 18 tile map values from.
   ds 2
